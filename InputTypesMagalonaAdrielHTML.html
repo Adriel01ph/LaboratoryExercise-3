@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample HTML Input tags</title>
+</head>
+<body>
+    <h1>Sample HTML Input tags</h1><hr>
+
+    <form action="InputTypesMagalonaAdrielPHP.php" method="post">
+        <p>
+            <b>TextFields</b> <br>
+            <label for="name">Enter Your Name:</label>
+            <input type="text" id="name" name="name"><br>
+            <label for="age">Enter Your Age:</label>
+            <input type="text" id="age" name="age"><br>
+            <label for="course">Enter Your Course:</label>
+            <input type="text" id="course" name="course"><br>
+        </p>
+
+        <p>
+            <b>Checkbox</b><br>
+            <label for="csCheckbox">Are you an officer of COMSOC?</label><br>
+            <input type="checkbox" id="csCheckbox" name="csCheckbox" value="on"> Yes<br>
+        </p>
+
+        <p>
+            <b>Multiple Checkboxes</b> <br>
+            <label>What is/are your favorite computer subject/s:</label><br>
+            <input type="checkbox" name="subjects[1]" value="Computer Programming"> Computer Programming<br>
+            <input type="checkbox" name="subjects[2]" value="Computer Graphics"> Computer Graphics<br>
+            <input type="checkbox" name="subjects[3]" value="Web Based Application"> Web Based Application<br>
+        </p>
+
+        <p>
+            <b>Radio Buttons</b> <br>
+            <label>Which do you prefer most?</label><br>
+            <input type="radio" name="prefer" value="Microsoft" /> Microsoft 
+            <br>
+            <input type="radio" name="prefer" value="Open Source" /> Open Source
+            <br>
+            <input type="radio" name="prefer" value="No comment" /> No comment
+        </p>
+
+        <p>
+            <b>List Boxes</b> <br>
+            <label for="job_preference">What job do you prefer after graduation?</label><br>
+            <select name="job_preference" id="job_preference">
+                <option value="Call Center Agent">Call Center Agent</option>
+                <option value="Programmer / Analyst">Programmer / Analyst</option>
+                <option value="Office Employee">Office Employee</option>
+                <option value="Computer Instructor">Computer Instructor</option>
+            </select>      
+        </p>
+
+        <br><br><br><br>
+
+        <label for="ListBoxes">Which do you prefer for a thesis topic/title?</label><br>
+        <select name="ListBoxes" id="ListBoxes" size="4">
+            <option value="Web-Based/On-Line Application"> Web-Based/On-Line Application</option>
+            <option value="Network-Based Application"> Network-Based Application</option>
+            <option value="System/Software Development"> System/Software Development</option>
+            <option value="Computer Aided Instruction"> Computer Aided Instruction</option>
+        </select> 
+
+        <p>
+            <b>TextArea</b> <br>
+            <label for="comments">Enter you thoughts here:</label><br>
+            <textarea id="comments" name="comments" rows="3" cols="50"></textarea>
+        </p>
+
+        <input type="submit" name="see_results" value="See Results">
+        <input type="reset" value="Clear">
+    </form>
+</body>
+</html>
